@@ -74,9 +74,26 @@ body{
 	float: right;
 	display: inline-block;
 }
+.search input{
+	width: 90%;
+	display: inline-block;
+	height: 40px;
+	border-radius: 6px;
+	border: none;
+	border-bottom: 2px solid;
+	padding: 5px;
+	display: none;
+}
 .search-icon{
 	float: right;
 	transform: scale(2);
+	height: 100%;
+	top: 50%;
+	position: relative;
+	/*transform: translateY(-50%);*/
+	/*display: inline-block;
+	/*vertical-align: middle;*/
+	/*margin-left: 15px;*/
 }
 .banner{
 	width: 100%;
@@ -180,7 +197,6 @@ body{
 .footer-content{
 	padding-bottom: 17px;
 	border-bottom: 2px solid ;
-
 }
 .footer-logo{
 	width: 20%;
@@ -222,6 +238,11 @@ body{
 .footer-menu li{
 	margin-right: 40px;
 	margin-left: 40px;
+	color:white;
+}
+.footer-menu li a{
+
+	color:white;
 }
 .copyright{
 	width: 20%;
