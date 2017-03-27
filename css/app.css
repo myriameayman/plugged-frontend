@@ -12,6 +12,15 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+/*	line-height: 25px;
+*//*	font-family: 'Lato', sans-serif;
+*/
+}
+.article-text p{
+padding-top: 5%;
+padding-bottom: 5%;
+}
 .row:before,
 .row:after {
 	content: "";
@@ -25,11 +34,7 @@
 	display:  table;
 	clear: both;
 }
-/*.header{
-	height: 250px;
-	width: 100%;
-	background-color: #a4e0f2;
-}*/
+
 .mini-info{
 	/*margin-left: 20px;*/
 	padding-top: 5%;
@@ -59,21 +64,21 @@
 	color: #404DED;
 }
 .text-article{
-padding-left: 5%;
+	padding-left: 5%;
 }
-.text{
-/*	padding-left: 5%;
-*/	font-size: 15px;
-}
+/*.text{
+	padding-left: 5%;
+	font-size: 15px;
+}*/
 .leftmrgn{
 	margin-top: 50px;
 	display: inline-block;
-	height: 100vh;
+	height: 200vmax;
 	width: 25%;
 	float: left;
-	background-color: #f7c0f1;
+	background-color: #edeff2;
 }
-.mini-info i{
+i{
 	/*	margin-left: 5px;*/	
 	color: #BBB9BF;
 }
@@ -95,14 +100,27 @@ svg{
 	/*border: 3px solid red;*/
 }
 .col{
+	display: inline-block;
 	padding-bottom: 5%;
 	transition: all .2s ease-in-out;
-	width: 30.5%;
-}
+/*	width: 30.5%;
+*/}
 .container-blog{
+	display: block;
+	float: right;
 	width: 75%;
 }
+.container-index{
+	width: 75%;
+	float: left;
+		position: relative;
+
+}
+
 .container-article{
+	position: relative;
+	/*display: block;*/
+	float: right;
 	width: 25%;
 	padding-right: 5%;
 }
@@ -112,20 +130,33 @@ svg{
 */	display: block;
 }
 .container {
-	float: right;
-	height: 100vh;
+	display: inline-block;
+	height: 100%;
 	margin-top: 5%;
 	padding-left: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-		/*border: 3px solid red;*/
-	overflow-y: auto;
+	/*border: 3px solid red;*/
+/*	overflow-y: scale;
+*/}
+.article-text{
+	margin-top: 5%;
+	padding-left: 3.5%;
+	padding-right: 5%;
+	width: 70%;
+	float: left;
+
 }
 .col:hover{
 	/*background-color: blue;*/
 	transform: scale(1.1);
 }
-.button{
+.share{
+	height: 200px;
+	width:100%;
+	display: inline-block;
+}
+/*.button{
 	margin-top: 10%;
 	margin-left: 43%;
 	display: inline-block;
@@ -134,12 +165,13 @@ svg{
 	text-align: center;
 	outline: none;
 	border: none;
+	box-shadow: 5px 5px 5px #e7e5e4;
 	border-radius: 5px;
 }
 .button-colour{
 	color: #fff;
 	background-color: #5C68F8;
-}
+}*/
 .row{
-float: right;
+	float: right;
 }
