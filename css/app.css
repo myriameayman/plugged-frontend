@@ -78,7 +78,7 @@ padding-bottom: 5%;
 	float: left;
 	background-color: #edeff2;
 }
-i{
+.icons{
 	/*	margin-left: 5px;*/	
 	color: #BBB9BF;
 }
@@ -167,11 +167,11 @@ svg{
 	border: none;
 	box-shadow: 5px 5px 5px #e7e5e4;
 	border-radius: 5px;
-}
+}*/
 .button-colour{
 	color: #fff;
 	background-color: #5C68F8;
-}*/
+}
 .row{
 	float: right;
 }
