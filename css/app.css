@@ -54,10 +54,10 @@ body{
 	padding-right: 2%;	
 	margin-bottom: 20px;
 	display: inline;
-	font-family: "times", Georgia, monospace;
+	/*font-family: "times", Georgia, monospace;*/
 	font-size: 12px;
-/*	font-weight: bold;
-*/}
+	font-weight: bold;
+}
 .mini-info-text-colour{
 	color: #BBB9BF;
 }
@@ -95,6 +95,7 @@ body{
 .icons{
 	/*	margin-left: 5px;*/	
 	color: #BBB9BF;
+	margin-right: 2px;
 }
 img{
 	height: 100%;
@@ -319,12 +320,59 @@ background-color: #0aadaa;
 	padding: 5%;
 	padding-left: 25%;
 	padding-right: 25%;
-	color: #6d6f72;
+	color: rgba(109, 111, 114, 1);
 }
-.comments h6{
+.comments .title{
 	font-weight: bold;
 	width: 100%;
 	padding-bottom: 30px;
-	border-bottom:  1px solid #6d6f72;
+	border-bottom:  1px solid rgba(109, 111, 114, 0.8);
 	opacity: 0.8;
+}
+.old-comments{
+    overflow-y: scroll;
+	height: 400px;
+}
+.comment{
+	padding-top: 4%; 
+	padding-bottom: 4%;
+	border-bottom: 1px solid rgba(109, 111, 114, 0.8);
+}
+.profile-pic{
+	height: 70px;
+	width: 70px;
+	background-size: cover;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 5%;
+}
+.comment-body{
+	width: 80%;
+	display: inline-block;
+}
+.comment-name{
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 3%;
+	display: inline-block;
+	margin-right: 2%;
+}
+.new-comment{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px;
+	/*margin-bottom: 15px;*/
+}
+.new-comment input{
+	display: inline-block;
+	background-color: #edeff2;
+	border: none;
+	font-style: italic;
+	color: rgba(109, 111, 114, 0.6);
+}
+.new-comment input:focus{
+	background-color: #edeff2;
+	border: none;
 }
