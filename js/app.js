@@ -13,18 +13,56 @@ $(document).ready(function() {
 		}
 		// alert(show);
 	});
-
 	var windowHeight = window.innerHeight;
-		var windowWidth = window.innerWidth;
-		// var numRows = document.getElementsByClassName('row').length;
-		var numCols = document.getElementsByClassName('col').length;
-		// var colsPerRows = 1 + windowHeight/300;
-	// alert("hi");
-	 $('.img').css('height', windowHeight/(4) + 'px'); 
-	 // $('.img').css('width', windowHeight/(colsPerRows) + 'px'); 
-	 // $('[class*=\'col\']').css('margin', 0.75*windowWidth*0.0011 + '%'); 
-	 // $('.col').css('width', (100)/(colsPerRows)   + '%'); 
+	var windowWidth = window.innerWidth;
+	$('.img').css('height', windowHeight/(4) + 'px'); 
 
+	if(window.innerWidth < 500){
+		$('.col').css('width', 85 + '%'); 
+		$('.container-article').css('width', 85 + '%'); 
+		$('.container-index').css('width', 95 + '%');
+		$('.row').css('float', 'left'); 
+
+
+	}
+	else{
+		if(window.innerWidth < 865){
+			$('.col').css('width', 45+ '%');
+			$('.container-article').css('width', 30 + '%'); 
+			$('.container-index').css('width', 70 + '%'); 
+		} 
+		else{
+			$('.col').css('width', 30.33+ '%'); 
+			$('.container-article').css('width', 25 + '%'); 
+			$('.container-index').css('width', 75 + '%'); 
+		}
+		$('.row').css('float', 'right'); 
+
+	}
 
 });
+window.onresize = function() {
+	if(window.innerWidth < 500){
+		$('.col').css('width', 85 + '%'); 
+		$('.container-article').css('width', 85 + '%'); 
+		$('.container-index').css('width', 95 + '%'); 
+		$('.row').css('float', 'left'); 
+	}
+	else{
+		if(window.innerWidth < 865){
+			$('.col').css('width', 45+ '%');
+			$('.container-article').css('width', 30 + '%'); 
+			$('.container-index').css('width', 70 + '%'); 
+		} 
+		else{
+			$('.col').css('width', 30.33+ '%'); 
+			$('.container-article').css('width', 25 + '%'); 
+			$('.container-index').css('width', 75 + '%'); 
+
+		}
+		$('.row').css('float', 'right'); 
+
+	}	
+};
+
 
