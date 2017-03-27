@@ -13,6 +13,9 @@
 	padding: 0;
 
 }
+h6{
+	margin: 0px;
+}
 body{
 /*	line-height: 25px;
 *//*	font-family: 'Lato', sans-serif;
@@ -68,7 +71,7 @@ body{
 	padding-left: 5%;
 }
 .row{
-	float: left;
+	/*float: left;*/
 	max-width: 100%;
 }
 .page-body{
@@ -87,7 +90,7 @@ body{
 	padding-top: 3%;
 	/*float: left;*/
 	background-color: #edeff2;
-	padding-left: 7%;
+	padding-left: 6%;
 }
 .icons{
 	/*	margin-left: 5px;*/	
@@ -191,10 +194,44 @@ background-color: #0aadaa;
 	/*background-color: blue;*/
 	transform: scale(1.1);
 }
+/*=======
+	outline: none;
+	border: none;
+	box-shadow: 5px 5px 5px #e7e5e4;
+	border-radius: 5px;
+<<<<<<< HEAD
+}*/
+
+
+.drop-down{
+	display: inline-block;
+	/*margin: 3px;*/
+	/*width: 40%;*/
+}
+.drop-down-menu{
+	color: white;
+	padding: 5px;
+	padding-top: 7px;
+	padding-left: 7px;
+	background-color: black;
+	vertical-align: middle;
+}
+.drop-down-menu a{
+	color: white;
+	margin-right: 10%;
+	vertical-align: middle;
+}
+.drop-down-menu i {
+	float: right;
+	font-size: 20px;
+	vertical-align: middle;
+	top: 50%;
+}
 /*.tags{
 	background-color: white;
 	margin: 0;
 	text-align: center;
+<<<<<<< HEAD
 	list-style-type: none;
 	}*/
 	.tags li{
@@ -229,13 +266,7 @@ background-color: #0aadaa;
 		padding-left: 7px;
 		background-color: black;
 	}
-	.drop-down-menu a{
-		color: white;
-		margin-right: 10%;
-	}
-	.drop-down-menu i {
-		float: right;
-	}
+	
 	.button-colour{
 		border-radius: 5px;
 		text-align: center;
@@ -245,4 +276,57 @@ background-color: #0aadaa;
 	.button-colour:hover{
 		background-color: #5C68F6;
 	}
+/*=======
+	color: #fff;
+	background-color: #5C68F8;
+}*/
+.button-colour:hover{
+	background-color: #5C68F6;
+}
+.hidden{
+	padding: 3px;
+	margin-top: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+	opacity: 0;
+	display: none;
+	transition: opacity .4s;
+	position: absolute;
+	padding-right: 6.5%;
+	/*width: 40%;*/
+}
+.hidden ul{
+	list-style-type: none;
+}
+.hidden ul li a{
+	padding-bottom: 6px;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+}
+.hidden.open{
+	display: block;
+	opacity: 1;
+	animation: fadeIn .4s;
+}
 
+@keyframes fadeIn{
+	0%{
+		display: block;
+		opacity: 0;
+		transform: scale(.8) translateY(-15px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
+@media only screen and (max-width: 1025px) {
+    .hidden {
+		background-color: rgba(255, 255, 255, 1);
+		position: static;
+    }
+}
+.comments{
+	background-color: #edeff2;
+}
