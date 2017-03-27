@@ -70,6 +70,7 @@ body{
 /*.text{
 	padding-left: 5%;
 	font-size: 15px;
+<<<<<<< HEAD
 }*/
 .row{
 	float: left;
@@ -119,6 +120,7 @@ svg{
 	padding-bottom: 5%;
 	transition: all .2s ease-in-out;
 }
+
 .container-blog{
 	display: inline-block;
 	float: right;
@@ -141,6 +143,7 @@ svg{
 	display: block;
 }
 .container {
+	text-align: center;
 	display: inline-block;
 	height: 100%;
 	margin-top: 5%;
@@ -178,11 +181,9 @@ svg{
 	border: none;
 	box-shadow: 5px 5px 5px #e7e5e4;
 	border-radius: 5px;
+<<<<<<< HEAD
 }*/
-.button-colour{
-	color: #fff;
-	background-color: #5C68F8;
-}
+
 
 .drop-down{
 	display: inline-block;
@@ -203,3 +204,13 @@ svg{
 .drop-down-menu i {
 	float: right;
 }
+.button-colour{
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	background-color: #5C68F8;
+}
+.button-colour:hover{
+	background-color: #5C68F6;
+}
+
