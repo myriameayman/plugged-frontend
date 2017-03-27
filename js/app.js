@@ -32,7 +32,7 @@ $(document).ready(function() {
 		$('.col').css('width', 85 + '%'); 
 		$('.container-article').css('width', 85 + '%'); 
 		$('.container-index').css('width', 95 + '%');
-		$('.row').css('float', 'left'); 
+		// $('.row').css('float', 'left'); 
 
 
 	}
@@ -47,9 +47,10 @@ $(document).ready(function() {
 			$('.container-article').css('width', 25 + '%'); 
 			$('.container-index').css('width', 75 + '%'); 
 		}
-		$('.row').css('float', 'right'); 
+		// $('.row').css('float', 'right'); 
 
 	}
+
 		$('label').click(function() {
 		var labelID = $(this).attr('class');
 		var parent = $(this).parent().parent().parent().parent().attr('id');
@@ -204,6 +205,20 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.drop-down-menu a').click(function(event) {
+		// alert('hello');
+		var id = $(this).attr('id');
+		// alert($('#'+id+' .hidden'));
+		$('#'+id+'.hidden').toggleClass('open');
+	});
+	$(function(){
+    $("a.counter").click(function()
+    {
+         $.get("set_interesantes.php?n=Frank Melo&u=f6e79cfe9c0ecc4c08dac4c860c4802b&back=http://localhost:8085/Something/success/profile.php?search_user=f6e79cfe9c0ecc4c08dac4c860c4802b&p=12&sa=f6e79cfe9c0ecc4c08dac4c860c4802b&i=2345123&dl=&iv=1" ); // you can do some animation here, like a "Liked!" popup or something
+         return false; // prevent default browser refresh on "#" link
+    });
+});
+
 });
 
 window.onresize = function() {
@@ -211,7 +226,7 @@ window.onresize = function() {
 		$('.col').css('width', 85 + '%'); 
 		$('.container-article').css('width', 85 + '%'); 
 		$('.container-index').css('width', 95 + '%'); 
-		$('.row').css('float', 'left'); 
+		// $('.row').css('float', 'left'); 
 	}
 	else{
 		if(window.innerWidth < 865){
@@ -225,7 +240,7 @@ window.onresize = function() {
 			$('.container-index').css('width', 75 + '%'); 
 
 		}
-		$('.row').css('float', 'right'); 
+		// $('.row').css('float', 'right'); 
 
 	}	
 };
