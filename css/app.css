@@ -13,6 +13,9 @@
 	padding: 0;
 
 }
+h6{
+	margin: 0px;
+}
 body{
 /*	line-height: 25px;
 *//*	font-family: 'Lato', sans-serif;
@@ -84,7 +87,7 @@ body{
 	margin-left: 0;
 }
 .leftmrgn{
-	display: inline-block;
+	/*display: inline-block;*/
 	/*margin-top: 50px;*/
 	display: inline-block;
 	min-height: 100vmax;
@@ -255,4 +258,13 @@ svg{
 		opacity: 1;
 		transform: scale(1) translateY(0);
 	}
+}
+@media only screen and (max-width: 1025px) {
+    .hidden {
+		background-color: rgba(255, 255, 255, 1);
+		position: static;
+    }
+}
+.comments{
+	background-color: #edeff2;
 }
