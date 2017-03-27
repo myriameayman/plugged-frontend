@@ -329,6 +329,10 @@ background-color: #0aadaa;
 	border-bottom:  1px solid rgba(109, 111, 114, 0.8);
 	opacity: 0.8;
 }
+.old-comments{
+    overflow-y: scroll;
+	height: 400px;
+}
 .comment{
 	padding-top: 4%; 
 	padding-bottom: 4%;
