@@ -39,7 +39,19 @@ $(document).ready(function() {
 		// $('.row').css('float', 'right'); 
 
 	}
-
+	$('.drop-down-menu a').click(function(event) {
+		// alert('hello');
+		var id = $(this).attr('id');
+		// alert($('#'+id+' .hidden'));
+		$('#'+id+'.hidden').toggleClass('open');
+	});
+	$(function(){
+    $("a.counter").click(function()
+    {
+         $.get("set_interesantes.php?n=Frank Melo&u=f6e79cfe9c0ecc4c08dac4c860c4802b&back=http://localhost:8085/Something/success/profile.php?search_user=f6e79cfe9c0ecc4c08dac4c860c4802b&p=12&sa=f6e79cfe9c0ecc4c08dac4c860c4802b&i=2345123&dl=&iv=1" ); // you can do some animation here, like a "Liked!" popup or something
+         return false; // prevent default browser refresh on "#" link
+    });
+});
 });
 window.onresize = function() {
 	if(window.innerWidth < 500){
