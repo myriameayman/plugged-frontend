@@ -92,7 +92,7 @@ body{
 	padding-top: 3%;
 	/*float: left;*/
 	background-color: #edeff2;
-	padding-left: 5%;
+	padding-left: 7%;
 }
 .icons{
 	/*	margin-left: 5px;*/	
@@ -187,6 +187,7 @@ svg{
 .drop-down{
 	display: inline-block;
 	margin: 3px;
+	width: 40%;
 }
 .drop-down-menu{
 	color: white;
@@ -198,4 +199,7 @@ svg{
 .drop-down-menu a{
 	color: white;
 	margin-right: 10%;
+}
+.drop-down-menu i {
+	float: right;
 }
