@@ -178,10 +178,9 @@ svg{
 	color: #0aadaa;
 	padding-bottom: 20px;
 }
-.text-tags:after {
+/*.text-tags:after {
 	content: '';
 	display: block;
-	/*font-weight: 10px;*/
 	position: absolute;
   bottom: 42%;
   width: 1.5%;
@@ -189,7 +188,7 @@ right: 82.5%;
 height: 1px;
 background-color: #0aadaa;
 }
-
+*/
 .col:hover{
 	/*background-color: blue;*/
 	transform: scale(1.1);
@@ -203,11 +202,7 @@ background-color: #0aadaa;
 }*/
 
 
-.drop-down{
-	display: inline-block;
-	/*margin: 3px;*/
-	/*width: 40%;*/
-}
+
 .drop-down-menu{
 	color: white;
 	padding: 5px;
@@ -227,59 +222,50 @@ background-color: #0aadaa;
 	vertical-align: middle;
 	top: 50%;
 }
-/*.tags{
-	background-color: white;
-	margin: 0;
+
+.tags li{
+	float: left;
+	display: inline;
+	background-color: #e7e5e4;
+	margin-left: 2.5%;
+	border-radius: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 2%;
+	margin-bottom: 5%;
+}
+.tags{
+
+}
+.share{
+	height: 200px;
+	width:100%;
+	display: inline-block;
+}
+
+.drop-down{
+	display: inline-block;
+	/*margin-right: 1px;*/
+	/*width: 50%;*/
+}
+/*.drop-down-menu{
+	color: white;
+	padding: 5px;
+	padding-top: 7px;
+	padding-left: 7px;
+	background-color: black;
+}*/
+
+.button-colour{
+	border-radius: 5px;
 	text-align: center;
-<<<<<<< HEAD
-	list-style-type: none;
-	}*/
-	.tags li{
-		float: left;
-		display: inline;
-		background-color: #e7e5e4;
-		margin-left: 2.5%;
-		border-radius: 15px;
-		padding-right: 10px;
-		padding-left: 10px;
-		margin-left: 2%;
-		margin-bottom: 5%;
-	}
-	.tags{
-
-	}
-	.share{
-		height: 200px;
-		width:100%;
-		display: inline-block;
-	}
-
-	.drop-down{
-		display: inline-block;
-		margin: 3px;
-		width: 40%;
-	}
-	.drop-down-menu{
-		color: white;
-		padding: 5px;
-		padding-top: 7px;
-		padding-left: 7px;
-		background-color: black;
-	}
-	
-	.button-colour{
-		border-radius: 5px;
-		text-align: center;
-		color: #fff;
-		background-color: #5C68F8;
-	}
-	.button-colour:hover{
-		background-color: #5C68F6;
-	}
-/*=======
 	color: #fff;
 	background-color: #5C68F8;
-}*/
+}
+.button-colour:hover{
+	background-color: #5C68F6;
+}
+
 .button-colour:hover{
 	background-color: #5C68F6;
 }
@@ -322,10 +308,10 @@ background-color: #0aadaa;
 	}
 }
 @media only screen and (max-width: 1025px) {
-    .hidden {
+	.hidden {
 		background-color: rgba(255, 255, 255, 1);
 		position: static;
-    }
+	}
 }
 .comments{
 	background-color: #edeff2;
