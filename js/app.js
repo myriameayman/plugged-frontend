@@ -21,7 +21,7 @@ $(document).ready(function() {
 		$('.col').css('width', 85 + '%'); 
 		$('.container-article').css('width', 85 + '%'); 
 		$('.container-index').css('width', 95 + '%');
-		$('.row').css('float', 'left'); 
+		// $('.row').css('float', 'left'); 
 
 
 	}
@@ -36,7 +36,7 @@ $(document).ready(function() {
 			$('.container-article').css('width', 25 + '%'); 
 			$('.container-index').css('width', 75 + '%'); 
 		}
-		$('.row').css('float', 'right'); 
+		// $('.row').css('float', 'right'); 
 
 	}
 
@@ -46,7 +46,7 @@ window.onresize = function() {
 		$('.col').css('width', 85 + '%'); 
 		$('.container-article').css('width', 85 + '%'); 
 		$('.container-index').css('width', 95 + '%'); 
-		$('.row').css('float', 'left'); 
+		// $('.row').css('float', 'left'); 
 	}
 	else{
 		if(window.innerWidth < 865){
@@ -60,7 +60,7 @@ window.onresize = function() {
 			$('.container-index').css('width', 75 + '%'); 
 
 		}
-		$('.row').css('float', 'right'); 
+		// $('.row').css('float', 'right'); 
 
 	}	
 };

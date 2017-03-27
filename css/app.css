@@ -18,8 +18,8 @@ body{
 */
 }
 .article-text p{
-padding-top: 5%;
-padding-bottom: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 .row:before,
 .row:after {
@@ -69,40 +69,40 @@ padding-bottom: 5%;
 /*.text{
 	padding-left: 5%;
 	font-size: 15px;
-}*/
-.leftmrgn{
-	margin-top: 50px;
-	display: inline-block;
-	height: 200vmax;
-	width: 25%;
-	float: left;
-	background-color: #edeff2;
-}
-.icons{
-	/*	margin-left: 5px;*/	
-	color: #BBB9BF;
-}
-img{
-	height: 100%;
-	width: 100%;
-	padding-bottom: 20px;
-}
-svg{
-	height: 10px;
-	width: 100%;
-}
+	}*/
+	.leftmrgn{
+		margin-top: 50px;
+		display: inline-block;
+		height: 200vmax;
+		width: 25%;
+		float: left;
+		background-color: #edeff2;
+	}
+	.icons{
+		/*	margin-left: 5px;*/	
+		color: #BBB9BF;
+	}
+	img{
+		height: 100%;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	svg{
+		height: 10px;
+		width: 100%;
+	}
 
-[class='col']{
-	display: inline-block;
-	margin-bottom: 2%;
-	margin-right: 2%;	
-	box-shadow: 5px 5px 5px #e7e5e4;
-	/*border: 3px solid red;*/
-}
-.col{
-	display: inline-block;
-	padding-bottom: 5%;
-	transition: all .2s ease-in-out;
+	[class='col']{
+		display: inline-block;
+		margin-bottom: 2%;
+		margin-right: 2%;	
+		box-shadow: 5px 5px 5px #e7e5e4;
+		/*border: 3px solid red;*/
+	}
+	.col{
+		display: inline-block;
+		padding-bottom: 5%;
+		transition: all .2s ease-in-out;
 /*	width: 30.5%;
 */}
 .container-blog{
@@ -113,7 +113,7 @@ svg{
 .container-index{
 	width: 75%;
 	float: left;
-		position: relative;
+	position: relative;
 
 }
 
@@ -130,6 +130,7 @@ svg{
 */	display: block;
 }
 .container {
+	text-align: center;
 	display: inline-block;
 	height: 100%;
 	margin-top: 5%;
@@ -167,11 +168,17 @@ svg{
 	border: none;
 	box-shadow: 5px 5px 5px #e7e5e4;
 	border-radius: 5px;
-}*/
-.button-colour{
-	color: #fff;
-	background-color: #5C68F8;
-}
-.row{
-	float: right;
-}
+	}*/
+	.button-colour:hover {
+		background-color: #3e8e41;
+	}
+
+	.button-colour{
+		border-radius: 5px;
+		text-align: center;
+		color: #fff;
+		background-color: #5C68F8;
+	}
+	.button-colour:hover{
+		background-color: #5C68F6;
+	}
