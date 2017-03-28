@@ -404,7 +404,7 @@ display: inline-block; */
 .nav .prev {
     right: 0%;
     right: 95%;
-    top: 60%;
+    top: 65%;
 
 }
 .nav .next {
@@ -512,16 +512,16 @@ input.img-6:checked ~ .nav-dots label#img-dot-6 {
 .banner_text_slider {
 /*  display: inline;
 */  color: green;
-    padding-top: 10%;
+    padding-top: 7%;
     padding-left: 0%;
 }
 i{
   /*  margin-left: 5px;*/ 
   color: #BBB9BF;
 }
-.mini-info{
+.mini-info-slider{
   /*margin-left: 20px;*/
-  padding-top: 5%;
+  padding-top: 0%;
   padding-bottom: 6%;
   padding-right: 10%;
   height: 20%;

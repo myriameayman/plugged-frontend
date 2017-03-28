@@ -39,8 +39,9 @@
 
 
 
+
  <div id="slider_id_1" class="slidesAv SliderMain" data-showSlides="1" data-arrow="true" data-dots="true" style="margin: 0;width: 200%;">
-  <ul class="slides" style="height: 89vh">
+  <ul class="slides">
     <input type="radio" name="radio-btn" class="img-1" checked />
     <li class="slide-container">
      <div class="slide slide1 slider-extended-blog" style="background-image: url(../images/slider1.jpg);">
@@ -49,7 +50,7 @@
 
         <div class="banner_head banner_head_slider">Is Nasa Building a Huge Rocket to Nowhere?</div>
 
-        <div class = "mini-info" style="padding-left: 10%">
+        <div class = "mini-info-slider" style="padding-left: 10%">
           <i class="fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
           <p class = "mini-info-txt mini-info-text-colour"> 12 </p>
           <i class="fa fa-calendar-o" aria-hidden="true"></i>
@@ -62,11 +63,11 @@
   <input type="radio" name="radio-btn" class="img-2" />
   <li class="slide-container">
     <div class="slide slide2 slider-extended-blog" style="background-image: url(http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg)"></div>
-    <div class="nav">
+<!--     <div class="nav">
       <label for="img-1" class="prev">&#x2039;</label>
       <label for="img-3" class="next">&#x203a;</label>
     </div>
-  </li>
+ -->  </li>
 
   <input type="radio" name="radio-btn" class="img-3" />
   <li class="slide-container">
@@ -106,12 +107,12 @@
 </div>
 
 
-<div class= "page-body row">
+<!-- <div class= "page-body row">
   <div class = "leftmrgn large-3 columns"> 
     <div class= "drop-down-section row">
       <div class = "category drop-down large-6 columns">
         <h4>Category</h4>
-        <!-- <div cl> -->
+ 
         <div class="drop-down-menu">
           <a href="#" class= "counter" id = "1">Sports</a>
           <a href="#" class= "counter" id = "1"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -174,78 +175,166 @@
 <div class = "clear"></div>
   </div>
 </div>
+ -->
 
-
-
-
-
-
-<div class = "container container-blog">
- <!-- <div class="row"> -->
+	<div class= "page-body row">
+		<div class = "leftmrgn large-3 columns"> 
+			<div class= "drop-down-section row">
+				<div class = "category drop-down large-6 columns">
+					<h4>Category</h4>
+					<!-- <div cl> -->
+					<div class="drop-down-menu">
+						<a href="#" class= "counter" id = "1">Sports</a>
+						<a href="#" class= "counter" id = "1"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<div class="clear"></div>
+						
+					</div>
+					<div class="hidden" id = "1">
+						<ul>
+							<li><a href="#">All</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Politics</a></li>
+							<li><a href="#">Tech</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sort-by drop-down large-6 columns">
+					<h4>Sort By</h4>
+					<div class="drop-down-menu">
+						<a href="#" class= "counter" id = "2">Latest</a>
+						<a href="#" class= "counter" id = "2"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<div class="clear"></div>
+					</div>
+					<div class="hidden" id = "2">
+						<ul>
+							<li><a href="#">All</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Politics</a></li>
+							<li><a href="#">Tech</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+      	<div class = "tagsContainer" >
+        <p class= "text-tags"> TAGS</p>
+<!-- <<<<<<< HEAD -->
+        <svg class="tag-line">
+          <line x1="0" y1="0" x2="20" y2="0" style="stroke:rgb(187, 185, 191);stroke-width:1"/>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+        <ul class = "tags">
+          <li>Market</li>
+          <li>Business</li>
+          <li>Sports</li>
+          <li>Culture</li>
+          <li>Tablets</li>
+          <li>Computer</li>
+          <li>SmartTV</li>
+          <li>Travel</li>
+          <li>Luxery</li>
+          <li>Market</li>
+          <li>Business</li>
+          <li>Sports</li>
+          <li>Culture</li>
+          <li>Tablets</li>
+          <li>Computer</li>
+          <li>SmartTV</li>
+          <li>Travel</li>
+          <li>Luxery</li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class = "container container-blog large-9 columns">
+     <div class="col">
+      <div class =  "img">
+       <img src="../css/imgs/img0.jpg">
+     </div>
+     <div class = "mini-info">
+       <p class = "mini-info-txt mini-info-txt-tech"> TECH </p>
+       <i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
+       <p class = "mini-info-txt mini-info-text-colour"> 12 </p>
+       <i class="icons fa fa-calendar-o" aria-hidden="true"></i>
+       <p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
+     </div>
+     <div class = "text text-article">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+     </div>
+   </div> 
+   <div class="col">
+    <div class =  "img">
+     <img src="../css/imgs/img0.jpg">
+   </div>
+   <div class = "mini-info">
+     <p class = "mini-info-txt mini-info-txt-news"> NEWS </p>
+     <i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
+     <p class = "mini-info-txt mini-info-text-colour"> 12 </p>
+     <i class="icons fa fa-calendar-o" aria-hidden="true"></i>
+     <p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
+   </div>
+   <div class = "text">
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+   </div>
+<!-- =======
+	        <ul class = "tags">
+		        <li>Market</li>
+		        <li>Business</li>
+		        <li>Sports</li>
+		        <li>Culture</li>
+		        <li>Tablets</li>
+		        <li>Computer</li>
+		        <li>SmartTV</li>
+		        <li>Travel</li>
+		        <li>Luxery</li>
+		        <li>Market</li>
+		        <li>Business</li>
+		        <li>Sports</li>
+		        <li>Culture</li>
+		        <li>Tablets</li>
+		        <li>Computer</li>
+		        <li>SmartTV</li>
+		        <li>Travel</li>
+		        <li>Luxery</li>
+	           	<div class="clear"></div>
+	        </ul>
+      	</div>
+		</div>
+		<div class = "container container-blog large-9 columns">
+			<div class="col">
+				<div class =  "img">
+					<img src="../css/imgs/img0.jpg">
+				</div>
+				<div class = "mini-info">
+					<p class = "mini-info-txt mini-info-txt-tech"> TECH </p>
+					<i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
+					<p class = "mini-info-txt mini-info-text-colour"> 12 </p>
+					<i class="icons fa fa-calendar-o" aria-hidden="true"></i>
+					<p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
+				</div>
+				<div class = "text text-article">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+			</div> 
+			<div class="col">
+				<div class =  "img">
+					<img src="../css/imgs/img0.jpg">
+				</div>
+				<div class = "mini-info">
+					<p class = "mini-info-txt mini-info-txt-news"> NEWS </p>
+					<i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
+					<p class = "mini-info-txt mini-info-text-colour"> 12 </p>
+					<i class="icons fa fa-calendar-o" aria-hidden="true"></i>
+					<p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
+				</div>
+				<div class = "text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+>>>>>>> f763f2c17aac95c832e758eb423b4c1248622410
+ -->
+ </div>
  <div class="col">
-   <div class =  "img">
-    <img src="../css/imgs/img0.jpg">
-  </div>
-  <div class = "mini-info">
-    <p class = "mini-info-txt mini-info-txt-tech"> TECH </p>
-    <i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
-    <p class = "mini-info-txt mini-info-text-colour"> 12 </p>
-    <i class="icons fa fa-calendar-o" aria-hidden="true"></i>
-    <p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
-  </div>
-  <div class = "text text-article">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-  </div>
-</div> 
-<div class="col">
-  <div class =  "img">
-    <img src="../css/imgs/img0.jpg">
-  </div>
-  <div class = "mini-info">
-    <p class = "mini-info-txt mini-info-txt-news"> NEWS </p>
-    <i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
-    <p class = "mini-info-txt mini-info-text-colour"> 12 </p>
-    <i class="icons fa fa-calendar-o" aria-hidden="true"></i>
-    <p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
-  </div>
-  <div class = "text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-  </div>
-
-</div>
-<div class = "container container-blog large-9 columns">
- <div class="col">
-  <div class =  "img">
-   <img src="../css/imgs/img0.jpg">
- </div>
- <div class = "mini-info">
-   <p class = "mini-info-txt mini-info-txt-tech"> TECH </p>
-   <i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
-   <p class = "mini-info-txt mini-info-text-colour"> 12 </p>
-   <i class="icons fa fa-calendar-o" aria-hidden="true"></i>
-   <p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
- </div>
- <div class = "text text-article">
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
- </div>
-</div> 
-<div class="col">
-  <div class =  "img">
-   <img src="../css/imgs/img0.jpg">
- </div>
- <div class = "mini-info">
-   <p class = "mini-info-txt mini-info-txt-news"> NEWS </p>
-   <i class="icons fa fa-flag-o mini-info-text-colour" aria-hidden="true"></i>
-   <p class = "mini-info-txt mini-info-text-colour"> 12 </p>
-   <i class="icons fa fa-calendar-o" aria-hidden="true"></i>
-   <p class = "mini-info-txt mini-info-text-colour"> 2 hours ago </p>
- </div>
- <div class = "text">
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
- </div>
-
-</div>
-<div class="col">
   <div class =  "img">
    <img src="../css/imgs/img1.jpg">
  </div>
@@ -391,7 +480,6 @@
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
  </div>
 
-
 </div> 
 <div class="col">
   <div class =  "img">
@@ -412,7 +500,6 @@
 <button class="buttons button_click button-colour">LOAD MORE</button>
 </div>
 <div class="clear"></div>
-
 </div>
 <div class="footer">
   <div class="footer-content">
