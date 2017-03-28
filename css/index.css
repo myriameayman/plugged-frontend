@@ -451,6 +451,7 @@ input:checked + .slide-container .nav label {
 }
 
 .nav-dots {
+	<<<<<<< HEAD
 	width: 100%;
 	bottom: 9px;
 	height: 11px;
@@ -488,13 +489,14 @@ input:checked + .slide-container .nav label {
 		padding-top: 10%;
 		font-size: 60px;
 		font-weight: bold;
-		color: black;
+		color: white;
 		letter-spacing: 1px;
 	}
 	.banner_head_slider{
 		padding-left: 10%;
 		padding-top: 0%;  color: white;
 		font-size: 150%;
+
   /*  position: absolute;
   */  margin-left: auto;
   margin-right: auto;
