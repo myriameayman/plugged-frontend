@@ -65,7 +65,7 @@ body{
 	font-weight: bold;
 }
 .mini-info-text-colour{
-	color: #BBB9BF;
+	color: #918f96;
 }
 .mini-info-txt-tech{
 	color: orange;
@@ -155,7 +155,7 @@ svg{
 	display: block;
 }
 .container {
-	text-align: center;
+	/*text-align: center;*/
 	display: inline-block;
 	height: 100%;
 	margin-top: 5%;
