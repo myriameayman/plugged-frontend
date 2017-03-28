@@ -112,6 +112,7 @@ svg{
 	width: 75%;
 	float: left;
 	position: relative;
+	margin-left: 10%;
 }
 .container-article{
 	position: relative;
@@ -334,6 +335,7 @@ svg{
 .comment{
 	padding-top: 4%; 
 	padding-bottom: 4%;
+	/*display: inline-block;*/
 	border-bottom: 1px solid rgba(109, 111, 114, 0.8);
 }
 .profile-pic{
