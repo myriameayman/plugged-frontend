@@ -4,6 +4,7 @@
 	var showSlides;
 	var showDots;
 	var cover; 
+	var id;
 	var type_arrow;
 	$(document).foundation()
 	$(document).ready(function() {
@@ -237,9 +238,22 @@
 
 	$('.drop-down-menu a').click(function(event) {
 		// alert('hello');
-		var id = $(this).attr('id');
+		id = $(this).attr('id');
 		// alert($('#'+id+' .hidden'));
 		$('#'+id+'.hidden').toggleClass('open');
+	   // alert("THE ID: "+ id);
+	});
+	$('.hidden li').click(function(event) {
+		var content = $(this).text();
+		// alert("HELLOOOOOOOO "+ content);
+		// var current = document.getElementById(id-1);
+		document.getElementById(id-1+"").text = content;
+				$('#'+id+'.hidden').toggleClass('open');
+	
+		// if()
+		// var id = $(this).attr('id');
+		// // alert($('#'+id+' .hidden'));
+		// $('#'+id+'.hidden').toggleClass('open');
 	});
 	$(function(){
 		$("a.counter").click(function()
@@ -381,4 +395,7 @@ function slider(slider_id) {
 function removeMargin(showSlides,slider_id) {
 	if (showSlides == 1)
 		$( "#slider_id_"+slider_id ).find('.slide').css('margin-left',0);
+}
+function onclick() {
+alert("IN");
 }
