@@ -330,6 +330,7 @@ display: inline-block; */
   display: block;
   margin: 0 auto;
   position: relative;
+  
 }
 
 .slides * {
@@ -360,7 +361,9 @@ display: inline-block; */
   transition: all .7s ease-in-out;
   background: white;
   height: 350px;
+  background-size: cover;
 /*    display:inline-flex;
+
 */}
 
 .slide img {
@@ -532,7 +535,7 @@ input.img-6:checked ~ .nav-dots label#img-dot-6 {
   padding-right: 2%;  
   margin-bottom: 20px;
   display: inline;
-  font-family: "times", Georgia, monospace;
+  /*font-family: "times", Georgia, monospace;*/
   font-size: 12px;
 /*  font-weight: bold;
 */}

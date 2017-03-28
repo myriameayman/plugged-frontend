@@ -60,7 +60,11 @@ $(document).ready(function() {
 			numSlides = $( "#slider_id_"+parent).find('.slide').length;
 			showSlides = $('#slider_id_'+parent).attr('data-showSlides');
 			showSlides++;
-			width = 100/(showSlides);
+			if(showSlides == 2) {
+				width =100;
+			}else{
+				width = 100/(showSlides);
+			}
 			showSlides--;	
 		}
 		var outOfVar = 1;
@@ -172,7 +176,11 @@ $(document).ready(function() {
 			numSlides = $( "#slider_id_"+dotLabelID).find('.slide').length;
 			showSlides = $('#slider_id_'+dotLabelID).attr('data-showSlides');
 			showSlides++;
+			if(showSlides == 2) {
+				width =100;
+			}else{
 			width = 100/(showSlides);
+			}
 			showSlides--;	
 			
 			if (image > 1)
@@ -237,22 +245,16 @@ $(document).ready(function() {
 		var keyCode = e.keyCode || e.which;
 		if (keyCode == '13'){
 			var comment = $(".new-comment input").val();
+			if(comment == "") {
+				return false;
+			}
 			var comment_name= "maggie sourial";
 			var time = "Just now";
-			// var newDiv = document.createElement('div');
-			// var newContent = document.createTextNode("Hi there and greetings!");
-			// newDiv.appendChild(newContent);
-			// var currentDiv = document.getElementById('new-comment'); 
-			// document.insertBefore(currentDiv, newDiv); 
-
 			$(".old-comments").append("<div class='comment'><div class='profile-pic' style='background-image: url(../Images/profile3.jpg)'></div><div class= 'comment-body'><h6 class='comment-name'>"+
-				comment_name+"</h6><i class='icons fa fa-calendar-o' aria-hidden='true'></i><i class='icons fa fa-calendar-o' aria-hidden='true'></i><p class= 'mini-info-txt mini-info-text-colour'>"+
+				comment_name+"</h6><i class='icons fa fa-calendar-o' aria-hidden='true'></i><p class= 'mini-info-txt mini-info-text-colour'>"+
 				time+"</p><p>"+comment+"</p></div></div></div></div>");
-			// alert(comment);
-			// $(".old-comments").animate({
-			// 	scrollTop:  scrolled
-			// });
 			 $('.old-comments').scrollTop($('.old-comments').scrollTop()+150);
+			 $(".new-comment input").val("");
 			return false;
 		}
 	})
@@ -305,17 +307,20 @@ function slider(slider_id) {
 	//if (showSlides >1)
 	showSlides++;
 	var width = 100/(showSlides);
+	if(showSlides==2) {
+		width = 100;
+	}
 	//if (showSlides >1)
 	showSlides--;	
 	//alert(showSlides*width);
-	$( "#slider_id_"+slider_id ).find('.next').css('right', '5%');
+	$( "#slider_id_"+slider_id ).find('.next').css('right', '-95%');
 	$( "#slider_id_"+slider_id ).find('.next').css('top', '65%');
 	var generateHere = document.getElementById("input-dots"+slider_id);
 	if (showSlides == 1) {
 	 	$( "#slider_id_"+slider_id ).find('.next').css('left', ((showSlides-1)*width/2)+'%');
 	   	$("#input-dots"+slider_id).css('position','absolute');
 	   	$("#input-dots"+slider_id).css('top','77%');
-	   	$("#input-dots"+slider_id).css('right','24%');
+	   	$("#input-dots"+slider_id).css('right','0%');
 	}
 	else $( "#slider_id_"+slider_id ).find('.next').css('left', (showSlides*width/2)+'%');
 	$( "#slider_id_"+slider_id ).find('hr').css('width', (showSlides*width+1)+'%');
@@ -354,11 +359,11 @@ function slider(slider_id) {
 	//alert("wasalt hena");
 	removeMargin(showSlides,slider_id);
 	if (showArrows == "true" && data_type == "2") {
-		$( "#slider_id_"+slider_id ).find('.next').css('top', '38%');
+		$( "#slider_id_"+slider_id ).find('.next').css('top', '28%');
 		$( "#slider_id_"+slider_id ).find('.next').css('left', '1%');
 	}
 	if(showDots =="false") {
-		$('#input-dots'+slider_id).css('display','none');
+		$('.nav-dots'+slider_id).css('display','none');
 		//alert("fff");
 	}
 	}
