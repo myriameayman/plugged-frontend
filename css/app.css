@@ -332,7 +332,7 @@ svg{
 }
 .old-comments{
 	overflow-y: scroll;
-	height: 400px;
+	height: 350px;
 }
 .comment{
 	padding-top: 4%; 
@@ -364,7 +364,7 @@ svg{
 .new-comment{
 	display: inline-block;
 	vertical-align: middle;
-	padding: 15px;
+	margin-top: -10%;
 	/*margin-bottom: 15px;*/
 }
 .new-comment input{
