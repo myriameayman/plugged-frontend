@@ -66,7 +66,7 @@ $(document).ready(function() {
 			// document.insertBefore(currentDiv, newDiv); 
 
 			$(".old-comments").append("<div class='comment'><div class='profile-pic' style='background-image: url(../Images/profile3.jpg)'></div><div class= 'comment-body'><h6 class='comment-name'>"+
-				comment_name+"</h6><i class='icons fa fa-calendar-o' aria-hidden='true'></i><i class='icons fa fa-calendar-o' aria-hidden='true'></i><p class= 'mini-info-txt mini-info-text-colour'>"+
+				comment_name+"</h6><i class='icons fa fa-calendar-o' aria-hidden='true'></i><p class= 'mini-info-txt mini-info-text-colour'>"+
 				time+"</p><p>"+comment+"</p></div></div></div></div>");
 			// alert(comment);
 			// $(".old-comments").animate({
