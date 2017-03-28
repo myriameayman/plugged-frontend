@@ -59,7 +59,11 @@ $(document).ready(function() {
 			numSlides = $( "#slider_id_"+parent).find('.slide').length;
 			showSlides = $('#slider_id_'+parent).attr('data-showSlides');
 			showSlides++;
-			width = 100/(showSlides);
+			if(showSlides == 2) {
+				width =100;
+			}else{
+				width = 100/(showSlides);
+			}
 			showSlides--;	
 		}
 		var outOfVar = 1;
@@ -171,7 +175,11 @@ $(document).ready(function() {
 			numSlides = $( "#slider_id_"+dotLabelID).find('.slide').length;
 			showSlides = $('#slider_id_'+dotLabelID).attr('data-showSlides');
 			showSlides++;
+			if(showSlides == 2) {
+				width =100;
+			}else{
 			width = 100/(showSlides);
+			}
 			showSlides--;	
 			
 			if (image > 1)
@@ -300,10 +308,13 @@ function slider(slider_id) {
 	//if (showSlides >1)
 	showSlides++;
 	var width = 100/(showSlides);
+	if(showSlides==2) {
+		width = 100;
+	}
 	//if (showSlides >1)
 	showSlides--;	
 	//alert(showSlides*width);
-	$( "#slider_id_"+slider_id ).find('.next').css('right', '5%');
+	$( "#slider_id_"+slider_id ).find('.next').css('right', '-95%');
 	$( "#slider_id_"+slider_id ).find('.next').css('top', '65%');
 
 	var generateHere = document.getElementById("input-dots"+slider_id);
