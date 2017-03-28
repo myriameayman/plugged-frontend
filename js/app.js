@@ -65,19 +65,27 @@ $(document).ready(function() {
 		var outOfVar = 1;
 		if (labelID == "next" || labelID == "prev") {
 		for (var i = 0; i < Math.ceil(numSlides/showSlides);i++) { 
-				if ($('#input-dots'+parent).children()[i].style.backgroundColor == "black")
+				//alert($('#input-dots'+parent).children()[i].style.backgroundColor);
+				if ($('#input-dots'+parent).children()[i].style.backgroundColor == "black") {
+					//alert("ggggg");
 					outOfVar = i;
-				$('#input-dots'+parent).children().css('background-color', '#bbb9bf');
+					//alert(i);
+				}
+				else $('#input-dots'+parent).children()[i].style.backgroundColor = '#bbb9bf';
 		}
+		$('#input-dots'+parent).children()[outOfVar].style.backgroundColor = '#bbb9bf';
 		outOfVar++;
 		}
+		//alert("first out of var: " + outOfVar);
+		//alert("math:" + Math.ceil(numSlides/showSlides));
 		if (labelID == "next") {
-			outOfVar ++;
+			outOfVar++;
 			if (outOfVar >= Math.ceil(numSlides/showSlides)) {
 			outOfVar = 1;
 					}
 			alert("outOfVar" + outOfVar);
 			$('#input-dots'+parent).find("#img-dot-"+outOfVar).css('background-color', 'black');
+			//$('#input-dots'+slider_id).find('#img-dot-1').css('background-color', 'black');
 			//alert($('#input-dots'+parent).find("#img-dot-"+outOfVar));
 
 			for ( var i = showSlides-1; i >= 0;i--) {
@@ -125,9 +133,10 @@ $(document).ready(function() {
 			}
 			
 			index ++;
+			//alert(index);
 			index = index - showSlides;
 			//alert(index);
-
+			if (showSlides == 1 && index <1) index = numSlides; 
 			if (index < 1) index = numSlides+index + 2;
 			//alert(index);
 			
@@ -203,6 +212,10 @@ $(document).ready(function() {
 				index--;
 			}
 		}
+		if (parent)
+		removeMargin(showSlides,parent);
+		else removeMargin(showSlides,dotLabelID);
+
 	});
 
 	$('.drop-down-menu a').click(function(event) {
@@ -253,7 +266,7 @@ function slider(slider_id) {
     showDots = $('#slider_id_'+slider_id).attr('data-dots');
     showArrows = $('#slider_id_'+slider_id).attr('data-arrow');
 	//cover = $('#slider_id_'+slider_id).attr('data-size');
-	alert(cover);
+	//alert(cover);
 	if(showArrows == "false") {
 		//alert(slider_id);
 		$( "#slider_id_"+slider_id ).find('.nav').css('display','none');
@@ -292,7 +305,7 @@ function slider(slider_id) {
 		dots = dots + " <label for=img-" + (i+1)+ " class='nav-dot' id='img-dot-" + (i+1)+ "'></label>";
 
 	generateHere.innerHTML = dots;
-	$('#img-dot-1').css('background-color', 'black');
+	$('#input-dots'+slider_id).find('#img-dot-1').css('background-color', 'black');
 			
 	$( "#slider_id_"+slider_id ).find('.slide').css('width',width + '%');
 	if (showSlides > 1)
@@ -318,6 +331,10 @@ function slider(slider_id) {
 		index--;
 	}
 	//alert("wasalt hena");
+	removeMargin(showSlides,slider_id);
 
 	}
-
+function removeMargin(showSlides,slider_id) {
+	if (showSlides == 1)
+		$( "#slider_id_"+slider_id ).find('.slide').css('margin-left',0);
+}
