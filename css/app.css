@@ -242,11 +242,9 @@ background-color: #0aadaa;
 	float: left;
 	display: inline;
 	background-color: #e7e5e4;
-	margin-left: 2.5%;
 	border-radius: 15px;
-/*<<<<<<< HEAD*/
-	padding-right: 2%;
-	padding-left: 2%;
+	padding-right: 1%;
+	padding-left: 1%;
 	margin-left: 2%;
 	margin-bottom: 3%;
 }
@@ -261,11 +259,6 @@ background-color: #0aadaa;
 	display: inline-block;
 }
 
-.share{
-	height: 200px;
-	width:100%;
-	display: inline-block;
-}
 
 .drop-down{
 	display: inline-block;
@@ -282,7 +275,7 @@ background-color: #0aadaa;
 .share-buttons{
 	display: inline-block;
 	float: left;
-	width: 7%;
+	width: 90px;
 	position: relative;
 	margin-right: 5%;
 }
@@ -304,18 +297,26 @@ background-color: #0aadaa;
 }
 .button-twitter{
 	border-radius: 5px;
-	background-color: #04dcef;
+	background-color: #13a9db;
 }
 .button-google{
 	border-radius: 5px;
-	background-color: #b72626;
+	background-color: #e51d1d;
+}
+.button-fb{
+	border-radius: 5px;
+	background-color: #046cc9;
 }
 .button-colour{
 	border-radius: 5px;
-    background-color: #5C68F8;
+	background-color: #5C68F8;
 }
 .button-colour:hover{
 	background-color: #5C68F6;
+}
+.tags li{
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 .hidden{
 	padding: 3px;
@@ -385,7 +386,7 @@ background-color: #0aadaa;
 	opacity: 0.8;
 }
 .old-comments{
-    overflow-y: scroll;
+	overflow-y: scroll;
 	height: 400px;
 }
 .comment{
