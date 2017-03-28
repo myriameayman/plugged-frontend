@@ -387,7 +387,7 @@ background-color: #0aadaa;
 }
 .old-comments{
     overflow-y: scroll;
-	height: 400px;
+	height: 47vh;
 }
 .comment{
 	padding-top: 4%; 
