@@ -22,45 +22,30 @@ ul{
 h6{
 	margin: 0px;
 }
-body{
-/*	line-height: 25px;
-*//*	font-family: 'Lato', sans-serif;
-*/
-}
+
 .article-text p{
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
-.row:before,
-.row:after {
-	content: "";
-	/*display:  table;*/
-	/*clear: both;*/
-}
-
 .leftmrgn:before,
 .leftmrgn:after {
 	content: "";
-	/*display:  table;*/
-	/*clear: both;*/
+	display:  table;
+	clear: both;
 }
 
 .mini-info{
-	/*margin-left: 20px;*/
 	padding-top: 5%;
 	padding-bottom: 6%;
 	padding-right: 10%;
 	height: 20%;
-	/*	margin-bottom: 20px;*/	
 	width: 100%;
-	/*	background-color: yellow;*/
 }
 .mini-info-txt{
 	overflow: auto;
 	padding-right: 2%;	
 	margin-bottom: 20px;
 	display: inline;
-	/*font-family: "times", Georgia, monospace;*/
 	font-size: 12px;
 	font-weight: bold;
 }
@@ -77,29 +62,24 @@ body{
 	padding-left: 5%;
 }
 .row{
-	/*float: left;*/
 	max-width: 100%;
 }
 .page-body{
 	height: 100%;
 	width: 100%;
-	/*margin: 0 auto;*/
 	float: left;
 	margin-left: 0;
 }
 .leftmrgn{
-	/*margin-top: 50px;*/
 	display: inline-block;
 	min-height: 100vmax;
-	height: auto;
+	height: 100%;
 	width: 33%;
 	padding-top: 3%;
-	/*float: left;*/
 	background-color: #edeff2;
 	padding-left: 6%;
 }
 .icons{
-	/*	margin-left: 5px;*/	
 	color: #BBB9BF;
 	margin-right: 2px;
 }
@@ -141,7 +121,6 @@ svg{
 	width: 75%;
 	float: left;
 	position: relative;
-
 }
 .container-article{
 	position: relative;
@@ -158,12 +137,9 @@ svg{
 	display: inline-block;
 	height: 100%;
 	margin-top: 5%;
-/*	padding-left: 2%;
-*/	padding-top: 5%;
-padding-bottom: 5%;
-/*border: 3px solid red;*/
-/*	overflow-y: scale;
-*/}
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
 .article-text{
 	margin-top: 5%;
 	padding-left: 3.5%;
@@ -192,32 +168,9 @@ padding-bottom: 5%;
 	color: #0aadaa;
 	padding-bottom: 2%;
 }
-/*.text-tags:after {
-	content: '';
-	display: block;
-	position: absolute;
-  bottom: 42%;
-  width: 1.5%;
-right: 82.5%;
-height: 1px;
-background-color: #0aadaa;
-}
-*/
 .col:hover{
-	/*background-color: blue;*/
 	transform: scale(1.1);
 }
-
-
-
-/*<<<<<<< HEAD
-.drop-down{
-	display: inline-block;
-}
-=======*/
-
-/*>>>>>>> f763f2c17aac95c832e758eb423b4c1248622410
-*/
 .drop-down-menu{
 	color: white;
 	padding: 5px;
@@ -258,12 +211,8 @@ background-color: #0aadaa;
 	position: relative;
 	display: inline-block;
 }
-
-
 .drop-down{
 	display: inline-block;
-	/*margin-right: 1px;*/
-	/*width: 50%;*/
 }
 .drop-down-menu{
 	color: white;
@@ -308,6 +257,7 @@ background-color: #0aadaa;
 	background-color: #046cc9;
 }
 .button-colour{
+	color: white;
 	border-radius: 5px;
 	background-color: #5C68F8;
 }
